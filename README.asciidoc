@@ -68,3 +68,9 @@ This repository builds a container that can create output from scad documents.
 This document is to test the output and as an example.
 
 == Github Actions
+To use the container in github actions use the run statemen and:
+
+.example
+----
+docker run --rm --name "openscad" --volume $PWD:/data $container openscad -o /data/test.png /data/*scad
+----
