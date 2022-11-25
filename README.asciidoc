@@ -71,9 +71,17 @@ This document is to test the output and as an example.
 To use the container in github actions use the run statemen and:
 
 .example
+[source,BASH]
 ----
 docker run --rm --name "openscad" --volume $PWD:/data $container openscad -o /data/test.png /data/*scad
 ----
 
 .Output of test as png
 image::./openscad/test.png[]
+
+.test source .scad
+[source,SCAD]
+----
+include::./openscad/test.scad[]
+----
+
