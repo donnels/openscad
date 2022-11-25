@@ -5,8 +5,8 @@ LABEL maintainer="docker@donnellan.de"
     RUN apt-get update \
         && apt-get install -y \
             xvfb x11-utils xauth \
-            openscad \
-        && rm -rf /var/lib/apt/lists/*
+            openscad 
+        #&& rm -rf /var/lib/apt/lists/*
     #ENV PATH $PATH
     ENV DISPLAY :99
     WORKDIR /home/openscad
