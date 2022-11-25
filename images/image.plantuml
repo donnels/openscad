@@ -1,0 +1,14 @@
+@startuml
+title Example image
+footer (C)2022 Sean Donnellan
+skinparam BackgroundColor #fff/aaf
+skinparam Shadowing 1
+skinparam TitleBackgroundColor #transparent
+skinparam footerBackgroundColor #transparent
+skinparam cardBackgroundColor #fff/aaf
+
+card source
+card destination
+
+source -> destination
+@enduml
