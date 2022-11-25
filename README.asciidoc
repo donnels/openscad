@@ -6,7 +6,7 @@
 :copyright: (C){year} {org} All Rights Reserved
 :classification: {org} - Un-classified
 :GH-org: VSR
-:GH-repo: asciidoc
+:GH-repo: openscad
 :repo-file: README
 //
 // URLs
