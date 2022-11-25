@@ -4,8 +4,6 @@ on:
   push:
     paths:
       - 'docker/**'
-      - '**.adoc'
-      - '**.asciidoc'
       - '.github/workflows/docker-publish.yml'
     branches: [ "main" ]
     # Publish semver tags as releases.
