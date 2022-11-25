@@ -86,7 +86,8 @@ jobs:
           echo "$container"
           docker pull $container
           cd openscad
-          docker run --rm --name "openscad" --volume $PWD:/data $container openscad -o /data/test.png /data/*scad
+          docker run --rm --name "openscad" --volume $PWD:/data $container openscad -o /data/test.stl /data/*scad
+          docker run --rm --name "openscad" --volume $PWD:/data $container openscad --colorscheme Tomorrow -o /data/test.png /data/*scad
         env:
           container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
 
