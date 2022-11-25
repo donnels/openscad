@@ -74,3 +74,6 @@ To use the container in github actions use the run statemen and:
 ----
 docker run --rm --name "openscad" --volume $PWD:/data $container openscad -o /data/test.png /data/*scad
 ----
+
+.Output of test as png
+image::./openscad/test.png[]
