@@ -87,8 +87,8 @@ jobs:
         run: |
           echo "$container"
           docker pull $container
-          docker run -v "$PWD":/documents/ --name asciidoc-to-pdf $container asciidoctor-pdf -D /documents/docs *.asciidoc
-          docker run -v "$PWD":/documents/ --name asciidoc-to-html $container asciidoctor -D /documents/docs *.asciidoc
+          cd openscad
+          docker run --rm --name "openscad" --volume $PWD:/data $container openscad -o /data/test.png /data/*scad
         env:
           container: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
 
