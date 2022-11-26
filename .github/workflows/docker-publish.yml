@@ -48,7 +48,6 @@ jobs:
         with:
           install: false
         
-
       - name: Inspect builder
         run: |
           echo "Name:      ${{ steps.buildx.outputs.name }}"
