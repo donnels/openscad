@@ -67,8 +67,7 @@ An Openscad container for use in Github actions and in headless mode.
 This repository builds a container that can create output from scad documents.
 This document is to test the output and as an example.
 
-== Github Actions
-To use the container in github actions use the run statemen and:
+== Images
 
 .example
 [source,BASH]
@@ -84,4 +83,20 @@ image::./openscad/test.png[]
 ----
 include::./openscad/test.scad[]
 ----
+
+//need to add camera view and config parameters to make this more versatile
+[appendix]
+= Libraries that need adding into the container
+
+.List of openscad libraries
+* link:https://openscad.org/libraries.html[]
+
+.library of parts for openscad (rpi etc)
+* link:https://github.com/nophead/NopSCADlib[]
+
+.BOSL library for openscad
+* link:https://github.com/revarbat/BOSL[]
+
+There are also a number of naca libraries and other airfoil libraries etc.
+
 
