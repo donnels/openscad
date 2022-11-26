@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'docker/**'
+      - 'openscad/**'
       - '.github/workflows/docker-publish.yml'
     branches: [ "main" ]
     # Publish semver tags as releases.
@@ -47,7 +48,7 @@ jobs:
         with:
           install: false
         
-        
+
       - name: Inspect builder
         run: |
           echo "Name:      ${{ steps.buildx.outputs.name }}"
