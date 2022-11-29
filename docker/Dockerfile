@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 LABEL maintainer="docker@donnellan.de"
     RUN mkdir -p /home/openscad \
-        && mkdir -p /root/.local/share /.local/share
+        && mkdir -p /root/.local/share /.local/share \
         && mkdir -p /data
     WORKDIR /opt/app
     COPY . .
