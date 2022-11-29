@@ -1,5 +1,6 @@
 FROM debian:stable-slim
 LABEL maintainer="docker@donnellan.de"
+ARG DEBIAN_FRONTEND=noninteractive
     RUN mkdir -p /home/openscad \
         && mkdir -p /root/.local/share /.local/share \
         && mkdir -p /data
