@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:oldstable-slim
 
 LABEL maintainer="docker@donnellan.de"
 ARG DEBIAN_FRONTEND=noninteractive
